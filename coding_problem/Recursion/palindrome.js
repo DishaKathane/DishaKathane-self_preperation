@@ -20,3 +20,11 @@ let str = "naina";
 let left = 0;
 let right = str.length-1;
 console.log(palindrome(str,left,right))
+
+// Send method
+
+function palindrom(str){
+    if(str.length <= 1) return true;
+    return (str[0] === str.slice(-1) && palindrom(str.slice(1,-1)))
+};
+console.log(palindrom("anana"));
