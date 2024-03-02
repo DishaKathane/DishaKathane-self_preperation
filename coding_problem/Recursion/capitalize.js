@@ -3,7 +3,7 @@
 */
 
 function capitalize(words){
-    console.log(words)
+    // console.log(words)
     if(words.length == 0) return ;
     let newArr = [];
     for( let word of words){
@@ -28,24 +28,26 @@ function RecursionArr(arr){
     let ele = arr[0];
     let fletter = ele.charAt().toUpperCase();
     ele = fletter+ele.slice(1);
-    console.log(ele);
+    // console.log(ele);
     newArr.push(ele);
     newArr = newArr.concat(RecursionArr(arr.slice(1)));
     return newArr;
 }
 console.log(RecursionArr(["hi","hello"]));
 
+
+
 function capitalizeTitle(title){
     let newArr = [];
    title = title.toLowerCase();
-   console.log(title)
+//    console.log(title)
    let word = title.split(" ")
-   console.log(word);
+//    console.log(word);
    for(let i of word){
     let firstLetter = i.substring(0,1).toUpperCase();
     let restletter = i.substring(1);
     newArr.push(firstLetter+restletter);
-    console.log(newArr)
+    // console.log(newArr)
 
     // console.log(firstLetter+restletter)
    }
@@ -57,3 +59,17 @@ console.log(capitalizeTitle(title))
 // expected output
 // First Letter Of Each Word
 
+
+
+
+
+// Another way to capitalize the first letter
+function capitalizeFletter(arr){
+let newArr = [];
+if(arr.length ===0) return arr
+let letter =arr[0][0].toUpperCase() + arr[0].slice(1);
+newArr.push(letter);
+let ans = newArr.concat(capitalizeFletter(arr.slice(1)));
+return ans;
+}
+console.log(capitalizeFletter(["tgeeg","yuop","gsew","mnbv"]))
