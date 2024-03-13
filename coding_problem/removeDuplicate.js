@@ -121,4 +121,4 @@ function fooBar(input){
 return ""
 }
 
-console.log(fooBar(35))
+console.log(fooBar(30))
