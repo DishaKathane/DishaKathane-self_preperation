@@ -42,4 +42,41 @@ function merge(arr1, arr2){
     return res
 };
 
-console.log(mergeSort([2,9,3,1,7,4,6,5]))
+// console.log(mergeSort([2,9,3,1,7,4,6,5]));
+
+function merge(arr1, arr2){
+    let res =[];
+    let i=0;
+    let j=0;
+    while(i<arr1.length && j<arr2.length){
+        if(arr1[i] >=arr2[j]){
+            res.push(arr2[j]);
+            j++;
+        }else{
+            res.push(arr1[i]);
+            i++;
+        }
+    }
+
+    while(i<arr1.length){
+        res.push(arr1[i]);
+        i++
+    };
+    while(j<arr2.length){
+        res.push(arr2[j])
+        j++
+    }
+    return res
+};
+
+function mergesort(arr){
+    if(arr.length <= 1) return arr;
+    let mid = Math.floor((arr.length)/2);
+
+    let  left = mergesort(arr.slice(0,mid));
+    let right = mergesort(arr.slice(mid));
+
+    return merge(left, right);
+}
+let arr = [1,9,10,3,7,4,9,4,6];
+console.log(mergesort(arr));
