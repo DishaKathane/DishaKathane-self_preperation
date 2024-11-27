@@ -1,6 +1,6 @@
 let string = "welcome to javascript";
 var a = string.length;
-document.write(a)
+document.write(a) 
 
 // toLowercase || toUppercase
 var b = string.toLowerCase();
