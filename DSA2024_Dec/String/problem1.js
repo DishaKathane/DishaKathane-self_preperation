@@ -21,6 +21,7 @@ let str2 = "i.like.this.program.very.much";
 
 function reverse(str) {
     str = str.split(".");
+    console.log(str)
     let str1 = [];
     for (let i = 0; i < str.length; i++) {
         if (str[i] !== "") {
