@@ -542,7 +542,7 @@
 //  ==> Team collaboration and Widely used.
  
 //  24.new Map():-
-//  ==> ne Map() is simillar to object but it advance from object.
+//  ==> new Map() is simillar to object but it advance from object.
 //  ==> Map key can any data type support and provide better performance.
  
 //  25.Dom and types of Dom
@@ -888,19 +888,19 @@
 // 16.What is storage encryption
 // =>Storage encryption encrypts all mongodb data or storage to ensure that only authorized process can access the protected data.
 
-// 16.What is replica set
+// 16.What is replica set?
 // =>It is a group of mongo instance that maintains the same dataset.
-// ==>Replica set provide redundancy and high availabbility and are the basi for all production deployments.
+// ==>Replica set provide redundancy and high availabbility and are the basic for all production deployments.
 // 17,When do we use a namesspace in MOngoDb?
-// =>During the sequencing of the names  of the database and the collection
+// =>During the sequencing of the names  of the database and the collection.
 
-// 17.MongoDb:- It is a cross platform document oriented database sytem
+// 17.MongoDb:- It is a cross platform document oriented database system.
 //              It is a high performance distributed databse systemies
 
 // 18.MongoDb drivers:-
 // ==>Sotware libraries that allows application to interact with MongoDb database.
 // ==>Its an Object Data modeling (ODM) library for mongoDb and Node JS.
-//    Why mongoose insted of official driver
+//    Why mongoose instead of official driver
 //   1.Structure Schemas
 //   2. Validitions
 //   3.Releationship
@@ -912,7 +912,7 @@
 // =>It provides automated scaling options to accommodate growing workloads.
 
 // 20.Cluster in MONGODB
-// ==>In mongoDb a cluster refers to a group of interconnected server that work together to store and mange data.
+// ==>In mongoDb a cluster refers to a group of interconnected server that work together to store and manage data.
 
 // 21. What is CORS
 // ==> CROSs-ORIGIN resource sharing or cors is a mechanism that uses HTTP headers to a great a browsers permission to access from a server.
@@ -921,12 +921,16 @@
 
 // =================================================//NODE JS//=============================================================>
 // 1. What is Node.js, and how does it differ from traditional server-side languages?
-// ==>  Node JS:- Node js is a open source. Running on a server, differnt browser use in differnt engine like as chrome use in V8 engine and                     	fireFox use in spider Monkey and safari use in safari.The main role of engine to converted javascript code to machine code.
+// ==>  Node JS:- Node js is a open source. Running on a server, differnt browser use in differnt engine like as chrome use in V8 engine and    fireFox use in spider Monkey and safari use in Javascript Core Webkit.The main role of engine to converted javascript code to machine code.
+// Google Chrome	V8
+// Edge (Internet Explorer)	Chakra
+// Mozilla Firefox	Spider Monkey
+// Safari 	Javascript Core Webkit
 // Fetaures Node JS: - => Its Scalable and provide flexibility
 //                     => Cost effective and easy to learn
 
 // Where to use Node js :- I/o bond
-//                         Data treaming application
+//                         Data streaming application
 //                         Real time chat application.
 
 // Dis-advantages :- CPU intensive doesnot use node js 
@@ -943,6 +947,7 @@
 
 
 // 3. What is Differnce between REST and SOAP APIS:-
+/**SOAP and REST are two internet data exchange mechanisms. For example, imagine that your internal accounts system shares data with your customer's accounting system to automate invoicing tasks. The two applications share data by using an API that defines communication rules. SOAP and REST are two different approaches to API design. The SOAP approach is highly structured and uses XML data format. REST is more flexible and allows applications to exchange data in multiple formats. */
 // ==>
 
 // 4.How does Node Js work.
@@ -955,23 +960,27 @@
 // ==>Once task is carried out completely the response is sent to the event loop that sends response back to the client.
 
 // 5.If node Js is single threded,then how does it handle concurrency ?
-// ==>The node Js procesing paradigm is heavily influenced by the javascript even based model and Javascript call back sytem
+// ==>The node Js procesing paradigm is heavily influenced by the javascript event based model and Javascript call back system
 // ==> As a result node Js can easily manage more concurrent client request .
 // ==>The event loop is the processing models beating heart in node Js. 
+/**Node js is an open-source virtual machine that uses javascript as its scripting language. Despite being single-threaded, it is one of the most popular web technologies. The reason why node js is popular despite being single-threaded is the asynchronous nature that makes it possible to handle concurrency and perform multiple I/O operations at the same time. Node js uses an event loop to maintain concurrency and perform non-blocking I/O operations.
+
+As soon as Node js starts, it initializes an event loop. The event loop works on a queue (which is called an event queue) and performs tasks in FIFO(First In First Out) order. It executes a task only when there is no ongoing task in the call stack. The call stack works in LIFO(Last In First Out) order. The event loop continuously checks the call stack to check if there is any task that needs to be run. Now whenever the event loop finds any function, it adds it to the stack and runs in order */
 
 // 6. How would you define the term I/o
 // ==>The I/O used to trasfer medium to another medium.
+/**I/O (Input/Output) is an information processing system designed to send and receive data from a computer hardware component, device, or network. */
 
 // 7.What are some some of the most commonly used libraries in node 
 // ==> Express JS:- Express Js is a flexible node Js web application framewrok that provides a set of fetures to develop web and mobile applications.
-// ==>Mongoose := Mongoose is also node Js web application framewrok  . We connect easily an appliction to a database.
+// ==>Mongoose := Mongoose is also node Js web application framewrok. We connect easily an appliction to a database.
 
 // 8.Even-Emitter
 // ==> Even -Emitter is a class that holds all the objects that can emit events
 // ==>Even-Emitter is the module comminication or interraction between object in node is called as Even-Emitter.
 // ==>We can use call back event
 
-// 9.How would you use a URL module in NOde Js
+// 9.How would you use a URL module in Node Js
 // ==> Its a built in module that helps split up the web address into readable format.
 
 // 10.What is streams in Node Js
@@ -984,7 +993,8 @@
 
 // 11. Explain Asynchronous and non-blocking Apis in node JS
 // ==>All Node Js library Apis are asynchronous which means they are also non blocking
-// ==>A node Js server never wait for an api to return data.
+// ==>A node Js server never wait for an api to return data
+/**Non-blocking APIs, a key feature of Node. js, complement the asynchronous approach. They ensure that the execution of code doesn't halt while waiting for input/output operations to complete. Instead, the program continues with other tasks, enhancing efficiency and responsiveness. */
 
 // 12.REPL :-
 // ==> Read,evaluted,print and loop .We can easily write a code on command interface by using REPL.
@@ -996,19 +1006,42 @@
 //                               3. Limit concurrency
 
 // 14.What is the difference between fork and spawn() method
-// ==>
+/**
+The spawn() method is used to launch a new process with a given command. It allows you to execute external commands and interact with the child process’s input and output streams in real time.
+const child = spawn(command, [args], [options]);
+
+
+The fork() Method
+The fork() method is a specialized version of spawn() that is specifically designed for spawning new Node.js processes. It creates a new instance of the V8 engine to run a separate Node.js script.
+
+const child = fork(modulePath, [args], [options]);
+*/
 
 // 15.What is buffer class in node JS.
 // ==>Buffer class store raw data simillar to an array of integers.
 // ==>Buffer class is used because pure javascript is not compatible with binary data.
+/**
+ * The Buffer class in Node. js is used to handle binary data. Since JavaScript traditionally had no mechanism for reading or manipulating streams of binary data, buffers were introduced in Node. js to fill this gap.
+ */
 
 // 16.What is piping In node Js:
+/**Piping in Node. js is a method used to connect a readable stream to a writable stream, allowing data to flow automatically from the source to the destination. The pipe() method is used to achieve this, making it easy to handle data streaming operations with minimal code. */
 // ==>Its a mechanism used to connect the output of one stream to another stream.
 // ==>Its normally used to retrieve data from one stream and pass output to another stream
 
-// 17.What is a rector pattern in Node JS
-// ==> A rector pattern is concept of non-blocking I/o opertion 
+// 17.What is a reactor pattern in Node JS
+// ==> A reactor pattern is concept of non-blocking I/o opertion 
 // ==>This pattern handles I/O opertion and genrated.
+/**The reactor pattern is a software design pattern that's used in Node.js to handle multiple service requests at the same time
+ * The reactor pattern uses an event loop to demultiplex incoming requests and send them to the correct handler. The pattern uses event-based mechanisms instead of blocking I/O or multi-threading.
+ * 
+ * Benefits
+The reactor pattern allows for: 
+Non-blocking and asynchronous handling of I/O operations 
+Efficient handling of events 
+Responsive and scalable systems 
+Optimized handling of concurrent events 
+ */
 
 // 18.test pyramid and testing in NOde JS
 // ==>Test pyramid is figure which explain proportion of unit test
@@ -1016,20 +1049,52 @@
 //      1.Unit test
 //      2.Integration test
 //      3.End to End test(E2E)
+/**
+ * The testing pyramid is a concept that groups software tests into three categories: unit, end to end, and integration. By understanding how each category differs, developers and QA professionals can build a more robust test suite that identifies bugs more quickly and with greater accuracy.
+ */
+
 
 // 19. What is middleware in node js
-// ==>Middleware is a function that recieves the request and response objects
+// ==>Middleware is a function that recieves the request and response objects.
+/**
+ * middleware is a function that acts as an intermediary between the client's request and the server's response. Middleware functions are used to: Modify request and response objects, Call the next middleware function, Execute code, and Terminate the request-response cycle.
+ * Middleware is a request handler that allows you to intercept and manipulate requests and responses before they reach route handlers
+ * 
+ * Types of Middleware
+Express JS offers different types of middleware and you should choose the middleware on the basis of functionality required.
+
+Application-level middleware: Bound to the entire application using app.use() or app.METHOD() and executes for all routes.
+Router-level middleware: Associated with specific routes using router.use() or router.METHOD() and executes for routes defined within that router.
+Error-handling middleware: Handles errors during the request-response cycle. Defined with four parameters (err, req, res, next).
+Built-in middleware: Provided by Express (e.g., express.static, express.json, etc.).
+Third-party middleware: Developed by external packages (e.g., body-parser, morgan, etc.).
+ */
 
 // 20.What are the different types of HTTP request
 // ==>GET,POST,DELETE and UPDATE
+/**
+ * HTTP (Hypertext Transfer Protocol) specifies a collection of request methods to specify what action is to be performed on a particular resource. The most commonly used HTTP request methods are GET, POST, PUT, PATCH, and DELETE. These are equivalent to the CRUD operations (create, read, update, and delete).
+ * 
+ * HTTP Requests
+HTTP Requests are the message sent by the client to request the data from the server or to perform some actions. Different HTTP requests are:
+
+GET: GET request is used to read/retrieve data from a web server. GET returns an HTTP status code of 200 (OK) if the data is successfully retrieved from the server.
+POST: POST request is used to send data (file, form data, etc.) to the server. On successful creation, it returns an HTTP status code of 201.
+PUT: A PUT request is used to modify the data on the server. It replaces the entire content at a particular location with data that is passed in the body payload. If there are no resources that match the request, it will generate one.
+PATCH: PATCH is similar to PUT request, but the only difference is, it modifies a part of the data. It will only replace the content that you want to update.
+DELETE: A DELETE request is used to delete the data on the server at a specified location.
+ */
 
 // 21.What is fork in Node JS:-
 // ==>The fork method in node js create a new child process that runs a separate node Js instance. and can be useful CPU intensive task or 
 // ==>Creating cluster of node JS. Servers.
+/**
+ * The fork() method is a specialized version of spawn() that is specifically designed for spawning new Node.js processes. It creates a new instance of the V8 engine to run a separate Node.js script.
+ */
 
 // 22. What is difference between Node JS and AJAX
 // ==>AJAX and NODE JS are two differ technologies.
-// ==>AJAX is a client side technologie that allows asynchronous comminication between client and server
+// ==>AJAX is a client side technologie that allows asynchronous communication between client and server
 // ==>Node JS is server side technologie that used to building fast and scalable.
 
 // 23. Can you access DOM in Node Js
@@ -1038,14 +1103,34 @@
 // 24.Explain Stub in Node JS
 // => Stub is a function that servers as a placeholder for more complex function.
 // =>Stubs are used unit testing to replace a real function.
+/**
+ * A small program routine that substitutes for a longer program which is possible to be loaded later or that is remotely located.
+ * Stubs can be either anonymous.
+Stubs can be wrapped into existing functions. When we wrap a stub into the existing function the original function is not called.
+Stubs are functions or programs that affect the behavior of components or modules.
+Stubs are dummy objects for testing.
+Stubs implement a pre-programmed response.
+ */
 
 // 25.What is Libuv ?
 // ==>Libuv is critical component of node Js.
 // =>Its possible to handle I/O operations in a non-blocking and efficient manner
+/**Libuv
+libuv is a C library originally written for Node.js to abstract non-blocking I/O operations. 
+
+Event-driven asynchronous I/O model is integrated.
+It allows the CPU and other resources to be used simultaneously while still performing I/O operations, thereby resulting in efficient use of resources and network.
+It facilitates an event-driven approach wherein I/O and other activities are performed using callback-based notifications.
+What is a thread pool?
+Libuv assigns tasks to a pool of worker threads. However, all callbacks that occur on task completion are executed on the main thread. 
+Note: After Node 10.5 worker threads can also be used to execute JavaScript in parallel. Libuv uses 4 threads by default, but can be changed using the UV_THREADPOOL_SIZE  */
 
 // 26.What is thread pool ? Which library handle it in node js.
-// => A thread pool is collection of threads that are used to execute in paralle.
+// => A thread pool is collection of threads that are used to execute js in parallel.
 // ==>Thread pool is handle by Libuv library.
+/**The Worker Pool of Node.js is implemented in libuv (docs), which exposes a general task submission API.
+
+Node.js uses the Worker Pool to handle "expensive" tasks. This includes I/O for which an operating system does not provide a non-blocking version, as well as particularly CPU-intensive tasks. */
 
 
 // =================================================//EXPRESS JS//=============================================================>
@@ -1057,6 +1142,11 @@
 // ==>express Js:- Express Js is a lightweight and fast backend web application framework for Node JS.
 //                 Express Js is built on Node JS
 //                 Express.Js written in javscript 
+/**Node.js and Express are two essential tools in the JavaScript ecosystem, especially for server-side development. While they are often used together, they serve different purposes.
+ * Node JS is an open-source and cross-platform runtime environment for executing JavaScript code outside of a browser. You need to remember that Node JS is not a framework and it’s not a programming language. Most people are confused and understand it’s a framework or a programming language. We often use Node.js for building back-end services like APIs for Web Apps or Mobile Apps. It’s used in production by large companies such as Paypal, Uber, Netflix, Walmart, and so on. 
+ * 
+ * Express is a small framework that sits on top of Node JS’s web server functionality to simplify its APIs and add helpful new features. It makes it easier to organize your application’s functionality with middleware and routing. It adds helpful utilities to Node JS’s HTTP objects. It facilitates the rendering of dynamic HTTP objects.
+ */
                 
 // ==>Node JS:- Node Js is an open source and cross-platform that is used to executed javascript code of a browser.
 //              Node JS is built on Google V8 engine.
@@ -1403,7 +1493,7 @@ Here, the workerData and parentPort are part of Worker Thread. The workerData is
  * 
  * Deep copy stores copies of the object’s value.
  * Deep copy doesn’t reflect changes made to the new/copied object in the original object.
- * ep copy stores the copy of the original object and recursively copies the objects as well.
+ * Deep copy stores the copy of the original object and recursively copies the objects as well.
  * Deep copy is comparatively slower.
  */
 // ==>Deep cloning is also copy object one by one. And also Deep cloning find refernce of another object.
@@ -1770,8 +1860,335 @@ Pass by Reference means that when you pass a variable (specifically, objects or 
 
 
 
+/**======================================MySQL Interview Questions============================================================
+ * 
+ * MySQL is a Free open-source Relational Database Management System(RDMS) that stores data in a structured tabular format using rows and columns. It uses Structured Query Language (SQL) for accessing, managing, and manipulating databases. It was originally developed by MySQL AB, a Swedish company, and is now owned by Oracle Corporation. It’s known for its high performance, reliability, and ease of use, making it one of the most popular databases in the world.
+ * 
+ *QUE 1. What is MySQL and How does it differ from other relational databases?
+MySQL is an open-source relational database management system (RDBMS) that is widely used for managing structured data. It utilizes SQL (Structured Query Language) for querying and managing data. MySQL is known for its reliability, scalability, and performance, making it a popular choice for various applications
+
+*QUE 2. How to create a database in MySQL?
+To create a database in MySQL, we can use the CREATE DATABASE statement followed by the name we want to give to our database. For example:
+
+CREATE DATABASE mydatabase;
+
+*QUE 3. Difference between CHAR and VARCHAR data types.
+CHAR: Fixed-length character data type where the storage size is predefined. Trailing spaces are padded to reach the defined length.
+VARCHAR: Variable-length character data type where the storage size depends on the actual data length. No padding of spaces is done.
+
+*QUE 4. Explain the differences between SQL and MySQL?
+
+SQL
+It is a structured query language that manages the relational database management system.
+
+It is not an open-source language.
+
+SQL supports XML and user defined functions.
+
+SQL can be implemented in various RDBMS such as PostgreSQL, SQLite, Microsoft SQL Server, and others.
+
+SQL itself is not a product and doesn’t have a license. It’s a standard language.
+
+MySQL
+
+It is a relational database management system that uses SQL.
+
+MySQL is an open-source platform. It allows access to anyone.
+
+It doesn’t support XML and any user defined functions
+
+MySQL is a specific implementation of an RDBMS that uses SQL for querying and managing databases.
+
+MySQL is open-source and available under the GNU General Public License (GPL).
+
+*QUE 5. What is the MySQL server’s default port?
+==>3306 is MySQL server‘s default port.
+
+*QUE 6. How can we learn batch mode in MySQL?
+==>Below is the syntax used to run batch mode.
+
+mysql <batch-file>;
+
+mysq <batch-file> mysql.out
 
 
+*QUE 7. How many different tables are present in MySQL?
+==>There are 5 types of tables present in MySQL.
+
+Heap table
+merge table
+MyISAM table
+INNO DB table
+ISAM table
+
+*QUE 8. What are the differences between CHAR and VARCHAR data types in MySQL?
+==>Storage and retrieval have been different for CHAR and VARCHAR.
+Column length is fixed in CHAR but VARCHAR length is variable.
+CHAR is faster than VARCHAR.
+CHAR datatype can hold a maximum of 255 characters while VARCHAR can store up to 4000 characters.
+
+
+*QUE 9. What is Difference between CHAR_LENGTH and LENGTH?
+==>LENGTH is byte count whereas CHAR_LENGTH is character count. The numbers are the same for Latin characters but different for Unicode and other encodings.
+
+Syntax of CHAR_LENGTH:
+
+
+SELECT CHAR_LENGTH(column_name) FROM table_name;
+
+
+Syntax of LENGTH:
+
+
+SELECT LENGTH(column_name) FROM table_name;
+
+*QUE 10. What do you understand by % and _ in the like statement?
+==>‘_’ corresponds to only one character but ‘%’ corresponds to zero or more characters in the LIKE statement.
+
+*QUE 11. How many index columns can be created in a table?
+==> There are 16 indexed columns can be created in a table.
+
+*QUE 12. What are string types available for columns?
+==> There are six string types available for the column.
+-SET
+-BLOB
+-TEXT
+-ENUM
+-CHAR
+-VARCHAR
+
+*QUE 13. Explain the main difference between FLOAT and DOUBLE?
+-FLOAT stored floating point number with 8 place accuracy. The size of FLOAT is 4 bytes.
+-DOUBLE also stored floating point numbers with 18 place accuracy. The size of DOUBLE is 8 bytes.
+
+*QUE 14. Explain the differences between BLOB and TEXT.
+==>BLOB:
+A BLOB is a large object in binary form that can hold a variable amount of data. Sorting and comparing in BLOB values are case-sensitive.
+
+There are four types of BLOB.
+TINYBLOB
+BLOB
+MEDIUMBLOB
+LONGBLOB
+
+==>TEXT:
+Sorting and comparison are performed in case-insensitive for TEXT values. we can also say a TEXT is case-insensitive BLOB.
+
+There are four types of TEXT.
+
+TINYTEXT
+TEXT
+MEDIUMTEXT
+LONGTEXT
+
+*QUE 15. Explain the difference between having and where clause in MySQL.
+==> WHERE statement is used to filter rows but HAVING statement is used to filter groups.
+GROUP BY is not used with WHERE. HAVING clause is used with GROUP BY.
+
+*QUE 16 Explain REGEXP?
+REGEXP is a pattern match where the pattern is matched anywhere in the search value.
+
+*QUE 17. How can we add a column in MySQL?
+A column is a series of table cells that store a value for table’s each row. we can add column by using ALTER TABLE statement.
+
+ALTER TABLE tab_name
+ADD COLUMN col_name col_definition [FIRST|AFTER exist_col];
+
+*QUE 18. How to delete columns in MySQL?
+==> We can remove columns in MySQL by using ALTER TABLE statement.
+
+Syntax:
+ALTER TABLE table_name DROP COLUMN column1, column2….;   
+
+*QUE 19. How to delete a table in MySQL?
+We can delete a table by using DROP TABLE statement. This statement deletes complete data of table.
+
+DROP TABLE table-name;
+
+*QUE 20. How are mysql_fetch_array() and mysql_fetch_object() different from each another?
+==>mysql_fetch_array() Gets a result row as a related array or a regular array from database. mysql_fetch_object gets a result row as an object from the database.
+
+*QUE 22. How does NOW() differ from CURRENT_DATE()?
+==> current year, month, and date with hours, minutes, and seconds is shown by using NOW() command while CURRENT_DATE shows current year current month, and current date.
+
+*QUE 23. What is the use of the ‘DISTINCT’ keyword in MySQL?
+the DISTINCT keyword allows for the removal of all duplicate records and the retrieval of unique records. The DISTINCT keyword is used with the SELECT statement.
+
+Syntax:
+SELECT DISTINCT colu1, colum2..
+FROM table_name;
+
+*QUE 24. Which storage engines are used in MySQL?
+Storage engines are also called table types. Data is stored in a file using multiple techniques.
+
+Below are some techniques.
+
+Locking Level
+Indexing
+Storage mechanism
+Capabilities and functions
+
+*QUE 25. How to create a table in MySQL?
+The CREAT TABLE command will be used to create a table in MySQL.
+
+Syntax:
+
+CREATE TABLE ‘Employee’ (‘Employee_Name’ VARCHAR(128), ‘Employee_ID’ VARCHAR(128), ‘Employee_Salary’ VARCHAR(16), ‘Designation’ CHAR(4)) ;
+
+*QUE 26. How to insert data in MySQL table?
+We can add data to a table using the INSERT INTO statement .
+
+Syntax:
+
+INSERT INTO table_name ( field1, field2, field3 ) 
+VALUES  ( value1, value2, value3 );   
+
+*QUE 27. Write a statement to find duplicate rows In the MySQL table?
+The below statement is used to find duplicate rows.
+
+SELECT Table_Name, Category FROM Product GROUP BY Name, Category HAVING COUNT(id) > 1;
+
+*QUE 28. What types of relationships are used in MySQL?
+There are three types of relationships used in MySQL.
+
+One-to-one: Elements with a one to one relationship can be included as columns in the table.
+
+One-to-many: One to many or many to one relationships both are same. It will occur when one row in a table is related to multiple rows in different table.
+
+Many-to-many: Many rows in a table are related to many rows in different table is called many to many relationship.
+
+*QUE 29. How to insert Date in MySQL?
+We can use INSERT statement to insert date in MySQL table. MySQL default date format is YYYY-MM-DD. Automatic MySQL consist many data types to store dates.
+
+DATE
+DATETIME
+TIMESTAMP
+YEAR
+Syntax:
+
+INSERT INTO table_name (column_name, column_date) VALUES (‘DATE: Manual Date’, ‘2023-5-20’);   
+
+*QUE 30. What is join? Tell different join in MySQL.
+Joins are used to connect two or more tables. It returns only same values in all tables.
+
+There are four different ways to join MySQL tables.
+
+Inner Join
+left Join
+Right Join
+Full Join
+
+*QUE 31. What is a primary key? How to drop the primary key in MySQL?
+A primary key in MySQL is a single field or a group of fields that are used to uniquely identify each record in a table. A primary key cannot be null or empty. ALTER TABLE statement is used to delete a primary key from a table.
+
+Syntax:
+ALTER TABLE table_name  DROP PRIMARY KEY;    
+
+*QUE 32. What is a heap table in MySQL?
+A heap table is usually used for temporary and fast temporary storage.
+
+BLOB or TEXT fields are not permitted in the heap table.
+comparison operator like =, <,>, = >,=< can be used only.
+Heap table didn’t support the AUTO_INCREMENT command.
+Indexes should be NOT NULL in the heap table.
+
+*QUE 33. What is the main difference between the primary key and the candidate key?
+The primary key uniquely identified each row of a table. only one primary key is available for a table.
+
+A primary is also a candidate key.
+Candidate key that can be used for all foreign key references.
+
+*QUE 34. What is the difference between DELETE and TRUNCATE commands in MySQL?
+DELETE Command is used to delete rows from the table depending on given the condition. TRUNCATE command is used to DELETE all rows from the table. DELETE command is a Data Manipulation Language command. TRUNCATE command is a Data Definition Language command.
+
+*QUE 35. What is InnoDB?
+A SQL storage database is called InnoDB database. The InnoDB offers ACID transactions, row-level locking, and foreign key support. InnoDB is owned by Oracle Corporation.
+
+*QUE 36 What is the importance of ACID properties?
+
+ACID properties ensure data consistency, integrity and reliability in DBMS. They manage multiple transactions that are occurring concurrently and help to recover data if any system failures occur. Thus, they play an important role.
+
+*QUE 37How can we achieve Atomicity in transactions?
+
+To achieve atomicity, a transaction should be treated as a single unit. If at any point of transaction, execution fails then the whole transaction should be rolled back by undoing the changes made.
+
+*QUE 36. What is the difference between UNION and UNION ALL in MySQL?
+==>During combining the results of more than one SELECT statement, the UNION operator deletes duplicate rows between the various SELECT statements. The UNION ALL also combines the result set of more than one SELECT statement, but it does not delete duplicate rows.
+
+
+*QUE 37. What is a ‘timestamp’ in MySQL?
+In MySQL, When a row is added to or updated in a table, a data type “timestamp” automatically records the time.
+
+
+*QUE 38. What is the use of ENUMs in MySQL?
+==>ENUM is a string object that can be used when creating tables to specify a set of predefined values.
+
+CREATE table size(name ENUM(‘Small’, ‘Medium’, ‘Large’);
+
+*QUE 39. How can you control max size of heap in MySQL?
+MySQL config variable max_heap_table_size can be used to control the max size of heap.
+
+Syntax:
+SET max_heap_table_size = M
+
+*QUE 41. Where MyISAM table will be stored and also give MyISAM formats of storage?
+Every MyISAM table is stored on disk. 
+
+There are three storage formats can be used .
+
+The .frm file can be used to store table definition.
+The .MYD( MYData) extension can be used for data files.
+The .MYI(MYIndex) extension can be used to Index files.
+
+*QUE 42. How can we save images in MySQL?
+In MySQL, Blobs can be used to store images. All database images are first converted into blobs then saved and then they will be added to the database, and finally, it will later be stored on the disk.
+
+*QUE 43. What are trigger and how many TRIGGERS are available in MySQL table?
+A trigger is a procedural code in a database. Triggers are automatically triggered when specific events occur on a particular table. During column updating triggers are invoked automatically.
+
+SIX triggers are available in MySQL table.
+
+BEFORE INSERT
+AFTER INSERT
+BEFORE UPDATE
+AFTER UPDATE
+BEFORE DELETE
+AFTER DELETE
+
+*QUE 45. What are Access Control Lists?
+A list of permissions known as an Access Control List is connected to an object. It is MySQL server security model helps in troubleshooting issues like users being unable to connect. MySQL holds the ACL’s cached in memory. ACL’s also called grant tables. MySQL verifies the authentication data and permissions against the ACLs. It predetermined order whenever a user tries to log in or execute a command.
+
+*QUE 46. What is Normalization and list the different types of normalization?
+Normalization is used to avoid duplication and redundancy. it is a process of organizing data. There are many normal forms of normalization. which are also called successive levels. The first three regular forms are sufficient.
+
+First Normal Form (1NF): There are no repeating groups within rows.
+Second Normal form(2NF): Value of every supporting column depending on the whole primary key.
+Third Normal Form(3NF): It depends only on the primary key and no other value of non-key column.
+
+*QUE 47. What are various ways to create an index?
+There are many options to create an index as below:
+
+T-SQL statements can be used to create an index.
+The SQL Server Management Studio is available for use. we can use this to browse to the table where the index will be created, and then right-click on the Indexes node. We must select the New Index option over here.
+We can identify the index indirectly by specifying the PRIMARY KEY and the UNIQUE constraint in the CREATE TABLE or ALTER TABLE statement.
+
+*QUE 48. What are a clustered index and a non clustered index?
+Cluster Index: An index type used to arrange data in a table is called a clustered index. The table’s data are stored in a specific order based on the clustered index.
+
+Non Cluster Index: A non-clustered index is also a type of index used to organize data in a table. The table’s data are not stored in a specific order based on the non clustered index.
+
+*QUE 50. How can you handle the –secure-file-priv in MySQL?
+The MySQL Server is restricted from loading directories using the LOAD DATA INFILE command by the -secure-file-priv option. Use the SHOW VARIABLES LIKE “secure_file_priv” command to view the directory that has been configured.
+
+There are two options to handle as below.
+
+Either transfer your file to the directory that secure-file-priv specifies.
+Or you can turn off secure-file-priv. This must be removed at the beginning and cannot be disabled later.
+
+*QUE 20. What is MySQL collation?
+A MySQL collation is a well-defined set of rules which are used to compare characters of a particular character set by using their corresponding encoding. Each character set in MySQL might have more than one collation, and has, at least, one default collation. Two character sets cannot have the same collation. For more details please refer What are collation and character set in MySQL? article. 
+
+ */
 
 
 
