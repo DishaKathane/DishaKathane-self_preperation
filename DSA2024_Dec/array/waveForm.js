@@ -24,6 +24,7 @@ function swap(arr,l,r){
 
 function sortWave(arr){
    arr.sort((a,b)=>a-b);
+   console.log(arr)
    for(let i=0; i<arr.length-1; i=i+2){
     swap(arr,i,i+1)
    }
