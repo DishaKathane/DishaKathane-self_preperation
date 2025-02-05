@@ -28,5 +28,5 @@ function merge(arr1, arr2) {
         k++;
     }
     return result;
-};
+} ;
 console.log(merge(arr1, arr2))
